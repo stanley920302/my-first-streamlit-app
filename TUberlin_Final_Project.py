@@ -10,7 +10,7 @@ st.set_page_config(page_title='Taiwan Export Amount',layout='wide')
 
 @st.cache_data
 def load_and_process_data():
-    sale=pd.read_excel('../data/TWsalesamount.xls',header=[0,1])
+    sale=pd.read_excel('TWsalesamount.xls',header=[0,1])
     sale.reset_index(inplace=True)
 
 # 把多層的columns變成單層
